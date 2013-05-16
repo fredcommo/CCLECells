@@ -187,7 +187,7 @@ setMethod('getDrugs', signature = 'cellLinesObj', function(object, arg = NULL,..
 setMethod('getCells', signature = 'cellLinesObj', function(object, arg = NULL,...){return(object@cellsInfo)})
 
 # ShowMethod
-setGeneric("show", function(object, arg = NULL,...) standardGeneric("show"))
+#setGeneric("show", function(object, arg = NULL,...) standardGeneric("show"))
 setMethod('show', signature = 'cellLinesObj',
           function(object){
             out <- rbind.data.frame(dim(getExprs(object)), dim(getCNV(object)),
